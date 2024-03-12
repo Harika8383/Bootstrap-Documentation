@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bootstrap Documentation</title>
+    </head>
+    <body  style="background-color: beige;">
+        <h1 style="text-align:center">Notes On Bootstrap</h1>
+        <hr>
+        <pre>
+            <h3>What is Bootstrap</h3>
+            * Most popular frontend framework.
+            * Used for building responsive, mobile first websites and web applications.
+            <h3>Why we use Bootstrap?</h3>
+            * Increase development speed.
+            * Assure responsiveness.
+            * Prevent repetition between projects.
+            * Ensure cross browser compatibility.
+            * Large community.
+            * Customizable.
+            <h3>Official Website</h3>
+            * Current version of bootstrap is 5.3.2.
+            * website is getbootstrap.com
+            * Scrolling down, we see two links - "Include via CDN". One is for CSS and the other for JavaScript.
+            * CDN stands for <b>Content Delivery Network</b>.
+            <h3>Advantages of CDN</h3>
+            * It maintains different servers depending upon our countries. So the load will be less. So, even when so many peopletries to access it 
+              at the same time, the load wont't be on the same server. If we generally download and using a zip file, then the total websitr pressure
+              will be directly on us. So the styles applied may take time to load. So, we use CDN links.
+            * In CDN link for CSS, it contains all the styles we can to apply.
+            <p></p>
+            * In bootstrap, we generally use classes to apply styles.
+            * <b>Note : </b>We can write as many classes as we want in a single tag, but we need to mention the main-class before applying any sub-classes
+              need to mention the main-class to use it.
+            <h3>Colors in Bootstrap</h3>
+            We have nine different colors in bootstrap. 
+            They are - 
+                1. primary ==>blue color;
+                2. secondary ==> light black;
+                3. dark ==> black;
+                4. success ==> green;
+                5. warning ==> yellow;
+                6. danger ==> red;
+                7. light ==> no background;
+                8. info ==> lightblue.(text will be in black);
+                9. link ==> blue color text with blue underline
+            <h3>Background Color</h3>
+            * main-class for background-color ==> bg
+            Ex: bg-primary;
+            * To get priority to our style, we apply "!"
+            * It gives its most priority to styles that we apply which has "!" symbol before it.
+            <h3>button</h3>
+            * mian-class ==> .btn
+            * When we use btn as a class name, then by default the background-color gray and border(black) will both be removed and only text will 
+              appear.
+            * By default we will have some margin between buttons. To remove the margin and make it as a group we use class name as <b>btn-group</b>.
+            * btn-group must be applied to the parent div.
+            * <b>disabled</b> ==> To make a button look inactive
+            * <b>btn-sm </b> ==> small button
+            * <b>btn-lg </b> ==> large button 
+            <h3>Alert Boxes</h3>
+            * main-class name for alert box ==> alert.
+            * Compared to other classes like buttons or any other classes, alert class colors we apply will be in light color.
+            * Text color will be highlighted while the background color will be light.
+            * Alert boxes are mainly used for div tags while bnt for button tags. It will work if we apply them to different tags. But, the correct 
+              way is to use this way.
+            <h3>Height and Width</h3>
+            * main class for width ==> w;
+            * mian class for height ==> h;
+            <h3>Margins</h3>
+            * main class for margin ==> m;
+            * <b>Sub classes for margin</b>
+                * m-auto ==> for the  content to be in center;
+                * mt ==> margin-top;
+                * mb ==> margin-bottom;
+                * ms ==> margin-start;
+                * me ==> margin-end;
+            <h3>Lists</h3>
+            * mian-class for list ==> list-group
+            * When we use list-group class, by default the bullet points and left margin will be removed.
+            * <b>Sub classes in list class -</b>
+                * list-group-item ==> for list-items(li) in a list
+                * active ==> To highlight any particular item
+            * After applying list-group-item class to the li tag, the content will take entire screen width(block-width) along with border around.
+            * If we want to control the width, we can apply width to the parent list tag.
+            <h3>Borders</h3>
+            * main-class name ==> border
+            * <b>Sub classes for border class - </b>
+                * border-top;
+                * border-end;
+                * border-bottom;
+                * border-start;
+            <h3>Tables</h3>
+            * main-class name for table ==> table.
+            * <b>Sub classes in table class - </b>
+                * table-striped ==> To get alternative colors i.e., one dark shade following the light shade of the same color.
+                * table-hover ==> we can do mouse hover
+            <h3>Cards</h3>
+            * mian class for card ==> Cards
+            * <b>Sub classes in card class - </b>
+                * card-header ==> light gray button border and background will be light.
+                * card-body ==> background-color will be white with left and right margin.
+                * card-footer ==> background-color will be light with ligt gray top border.
+                * card-text ==> for normal text.
+                * card-title ==> for thickness and some increased font-size.
+                * card-img-top ==> After applying this class name, the image will exactly fit into the particular applied region.
+            <h3>Flex</h3>
+            * main class for flex ==> d-flex;
+            * <b>Sub classes for flex - </b>
+                * justify-content-around;
+                * justify-content-between;
+                * justify-content-evenly;
+                * justify-content-center;
+            <h3>Grid</h3>
+            * Grid consists of three elements.
+            * grid basically consists of rows and columns.
+            * If we want to start using a grid, we need a row, column(one or more) and we do start with a container.
+            <h4>Container</h4>
+            * main class for ci=ontainer ==> container
+            * By default some margin will be applied. To occupy full 100% width we need to use <b>conatiner-fluid </b>as class.
+            * We can also do it like container-{breakpoint};
+            * If we want to want tomix it so depending on the screen, you want your conatiner behave differently, we can easily 
+              do it with bootstrap. 
+            * <b>breakpoints - </b> 
+                * sm ==> small;
+                * md ==> medium;
+                * lg ==> large;
+                * xl ==> extra-lg;
+                * xxl ==> double-extra-lg;
+            <h3>Modal Box</h3>
+            * We must include both link and script CDN links fro here.
+            * main class name for modal box ==> modal.
+            * Steps to be followed -
+                1. inside the body take one button and div tags
+                2. apply to button  data-bs-toggle="modal" (data-bs-toggle ==> after clicking the content will be visible)
+                3. apply to button data-bs-target="#dividname"
+                4. apply div to class="modal"
+                5. apply div to id="dividname"
+                6. match the div idname and data-bs-target
+            * <b>Sub classes for modal class - </b>
+                * modal-dialog ==> Content will be displayed in the center
+                * modal-content ==> content will be highlighted
+                * modal-header
+                * modal-body
+                * modal-footer
+            * data-bs-dismiss ==> used to come back from the dialog box.
+            <h3>Coolapse</h3>
+            * main class of collapse ==> collapse.
+            * Collapsibles are uuseful when you want to hide and show large amount of content.
+            * Steps to be followed - 
+                1. inside the body take one button and div tags
+                2. apply to button  data-bs-toggle="collapse"
+                3. apply to button data-bs-target="#dividname"
+                4. apply div to class="collapse"
+                5. apply div to id="dividname"
+                6. match the div idname and data-bs-target 
+            <h3>Offcanvas</h3>
+            * main class name for offcanvas ==> offcanvas.
+            * This is a component which allows us to basically create slide inside-bar.
+            * <b>Sub classes for offcanvas - </b>
+                * offcanvas-bottom ==> appears from bottom;
+                * offcanvas-top ==> appears from top;
+                * offcanvas-start ==> appears from left;
+                * offcanvas-end ==> appears from right;
+            <h3>rounded</h3>
+            * rounded ==> apples border-radius;
+            * rounded-circle ==> becomes circle in shape;
+            * rounded-pill ==> Not fully circle in shape;
+
+            
+<b>Note: </b> For reference, go to getbootstrap.com and then go to docs, search for your content required.
+        </pre>
+    </body>
+</html>
