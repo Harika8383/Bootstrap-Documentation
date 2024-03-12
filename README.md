@@ -1,2 +1,2 @@
 # Bootstrap-Documentation
-Create clear and concise HTML documentation for Bootstrap on GitHub, covering components, layout, and customization within 350 characters. Utilize markdown for formatting and include code snippets and examples for practical understanding.
+"Comprehensive Bootstrap framework documentation created in HTML format for GitHub repository. Covers installation, usage, components, customization, and examples. Easily accessible for developers seeking guidance on utilizing Bootstrap for web development projects."
